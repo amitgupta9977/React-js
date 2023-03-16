@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import FormValidation from './assets/Form'
-import {Inputfiled} from './assets/Form'
+import FormValidation from './Form'
+import FormElement from './2.form-element'
+import SignupForm from './Google-signup'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <FormValidation />
-    <Inputfiled/>
-  </React.StrictMode>,
+  <>
+
+    <SignupForm/>
+    
+  </>,
 )

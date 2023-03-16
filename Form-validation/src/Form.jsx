@@ -1,7 +1,5 @@
 import { Component } from "react";
-import styled from "styled-components";
-
-
+import {FormDiv} from './style'
 
 
 class FormValidation extends Component {
@@ -21,7 +19,7 @@ class FormValidation extends Component {
     const { name, city, state, mobile } = this.state;
     return (
       <>
-        <form action="">
+        <FormDiv>
           <label htmlFor="name">Name :</label>
           <input
             type="text"
@@ -58,7 +56,7 @@ class FormValidation extends Component {
           />
           <br />
           <br />
-        </form>
+        </FormDiv>
         <div>
           <p className="para">Name:{name}</p>
           <p className="para">City:{city}</p>
