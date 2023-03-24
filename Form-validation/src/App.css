@@ -1,4 +1,4 @@
-form {
+/* form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,4 +48,40 @@ button[type="submit"] {
   color: green;
   font-size: 16px;
   margin-top: 10px;
+} */
+
+.add-btn {
+  background-color: rgb(39, 39, 232);
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 45px;
+  width: 90px;
+  color: aliceblue;
+  font-size: 20px;
+  box-sizing: content-box;
 }
+
+.add-btn:hover {
+  background-color: rgb(4, 232, 0);
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 45px;
+  width: 90px;
+  color: aliceblue;
+  font-size: 20px;
+  box-sizing: content-box;
+}
+
+.innerText {
+  box-sizing: content-box;
+  height: 45px;
+  background-color: rgb(241, 238, 234);
+  border-style: none;
+
+}
+
+
+
+
