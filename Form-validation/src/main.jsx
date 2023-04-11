@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ButtonExample from './button';
-import BadgeExample from './badge';
+import App from './hooks/app';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    <ButtonExample />
-    <BadgeExample />
+  
+    <App/>
   </>
 );
