@@ -1,23 +1,36 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 function ParentComponent() {
-  const inputRef = useRef(null);
+  const [inputValue, setInputValue] = useState("");
+  const childComponentRef = useRef(null);
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
 
   const handleButtonClick = () => {
-    const inputValue = inputRef.current.value;
-    console.log(inputValue);
+    childComponentRef.current.updateValue(inputValue);
   };
 
   return (
     <div>
-      <input ref={inputRef} />
-      <ChildComponent inputRef={inputRef} />
-      <button onClick={handleButtonClick}>Submit</button>
+      <input value={inputValue} onChange={handleInputChange} />
+      <ChildComponent ref={childComponentRef} />
+      <button onClick={handleButtonClick}>Pass Value to Child Component</button>
     </div>
   );
 }
 
-function ChildComponent(props) {
-  return <div>The input value is: {props.inputRef.current.value}</div>;
-}
-export default handleButtonClick;
+const ChildComponent = React.forwardRef((props, ref) => {
+  const [value, setValue] = useState("");
+
+  const updateValue = (newValue) => {
+    setValue(newValue);
+  };
+
+  React.useImperativeHandle(ref, () => ({
+    updateValue,
+  }));
+
+  return <div>The input value in the child component is: {value}</div>;
+});
