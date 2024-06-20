@@ -1,4 +1,4 @@
-// src/components/About.js
+// src/components/About
 import React from "react";
 
 function About() {
