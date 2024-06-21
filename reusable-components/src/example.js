@@ -5,6 +5,3 @@
 // const promises = [promise1, promise2, promise23];
 
 // Promise.any(promises).then((value) => console.log(value));
-
-//import 
-//import
