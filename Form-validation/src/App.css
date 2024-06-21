@@ -81,7 +81,60 @@ button[type="submit"] {
   border-style: none;
 
 }
+.footer-section {
+  background-color: #292929;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
 
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.footer-container p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.home-section {
+  background-color: #f5f5f5;
+  padding: 6rem 0;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #292929;
+}
+
+.home-description {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 4rem;
+  color: #5a5a5a;
+}
+
+.home-button {
+  display: inline-block;
+  font-size: 1.25rem;
+  background-color: #292929;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home-button:hover {
+  background-color: #1d1d1d;
+}
 
 
